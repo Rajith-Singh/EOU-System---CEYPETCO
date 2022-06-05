@@ -28,7 +28,7 @@ namespace EOU
 
         private void GetTestingDetails()
         {
-            SqlCommand cmd = new SqlCommand("Select * from Testing", con);
+            SqlCommand cmd = new SqlCommand("Select T.epfno, T.bill_desc, T.date, T.testing_val, E.name from Testing T, emp E where T.epfno = E.epfno", con);
             DataTable dt = new DataTable();
 
             con.Open();
@@ -91,7 +91,6 @@ namespace EOU
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@epfno", testing_epf_no.Text);
                 cmd.Parameters.AddWithValue("@bill_desc", bill_description.Text);
-                //cmd.Parameters.AddWithValue("@date", testing_date.DateTime.Now);
                 cmd.Parameters.AddWithValue("@date", DateTime.Parse(testing_date.Text));
                 cmd.Parameters.AddWithValue("@testing_val", testing_value.Text);
 
@@ -100,6 +99,7 @@ namespace EOU
                 con.Close();
 
                 MessageBox.Show("New testing record is successfully added","Saved",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                GetTestingDetails();
             }
         }
 

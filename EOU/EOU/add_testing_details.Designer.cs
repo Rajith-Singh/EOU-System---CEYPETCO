@@ -63,7 +63,6 @@
             this.bill_desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.testing_val = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rem_amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gunaGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageSlideT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.testing_grid)).BeginInit();
@@ -506,7 +505,6 @@
             // 
             // testing_grid
             // 
-            this.testing_grid.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.testing_grid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.testing_grid.AutoGenerateColumns = false;
@@ -529,8 +527,7 @@
             this.name,
             this.bill_desc,
             this.date,
-            this.testing_val,
-            this.rem_amount});
+            this.testing_val});
             this.testing_grid.DataSource = this.eOUDataSetBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -561,7 +558,7 @@
             this.testing_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.testing_grid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.testing_grid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.testing_grid.ThemeStyle.HeaderStyle.Height = 52;
+            this.testing_grid.ThemeStyle.HeaderStyle.Height = 27;
             this.testing_grid.ThemeStyle.ReadOnly = false;
             this.testing_grid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.testing_grid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -588,33 +585,33 @@
             // 
             // epfno
             // 
+            this.epfno.DataPropertyName = "epfno";
             this.epfno.HeaderText = "EPF No";
             this.epfno.Name = "epfno";
             // 
             // name
             // 
+            this.name.DataPropertyName = "name";
             this.name.HeaderText = "Name";
             this.name.Name = "name";
             // 
             // bill_desc
             // 
+            this.bill_desc.DataPropertyName = "bill_desc";
             this.bill_desc.HeaderText = "Bill Description";
             this.bill_desc.Name = "bill_desc";
             // 
             // date
             // 
+            this.date.DataPropertyName = "date";
             this.date.HeaderText = "Date";
             this.date.Name = "date";
             // 
             // testing_val
             // 
+            this.testing_val.DataPropertyName = "testing_val";
             this.testing_val.HeaderText = "Testing Value";
             this.testing_val.Name = "testing_val";
-            // 
-            // rem_amount
-            // 
-            this.rem_amount.HeaderText = "Remaining Amount";
-            this.rem_amount.Name = "rem_amount";
             // 
             // add_testing_details
             // 
@@ -684,6 +681,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn bill_desc;
         private System.Windows.Forms.DataGridViewTextBoxColumn date;
         private System.Windows.Forms.DataGridViewTextBoxColumn testing_val;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rem_amount;
     }
 }
