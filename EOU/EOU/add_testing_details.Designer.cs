@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(add_testing_details));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -40,10 +41,9 @@
             this.t_btn_testing = new Guna.UI.WinForms.GunaButton();
             this.t_btn_home = new Guna.UI.WinForms.GunaButton();
             this.imageSlideT = new System.Windows.Forms.PictureBox();
-            this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.testing_epf_search = new Guna.UI.WinForms.GunaTextBox();
+            this.testing_epf_no = new Guna.UI.WinForms.GunaTextBox();
             this.channelling_search = new Guna.UI.WinForms.GunaButton();
             this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
@@ -55,10 +55,21 @@
             this.testing_value = new Guna.UI.WinForms.GunaTextBox();
             this.channelling_calc = new Guna.UI.WinForms.GunaButton();
             this.testing_grid = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.eOUDataSet = new EOU.EOUDataSet();
+            this.eOUDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eOUDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.epfno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bill_desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.testing_val = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rem_amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gunaGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageSlideT)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.testing_grid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eOUDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eOUDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eOUDataSetBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaGradientPanel1
@@ -263,19 +274,6 @@
             this.imageSlideT.TabIndex = 3;
             this.imageSlideT.TabStop = false;
             // 
-            // gunaTransfarantPictureBox1
-            // 
-            this.gunaTransfarantPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTransfarantPictureBox1.BaseColor = System.Drawing.Color.Black;
-            this.gunaTransfarantPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaTransfarantPictureBox1.Image")));
-            this.gunaTransfarantPictureBox1.Location = new System.Drawing.Point(100, 527);
-            this.gunaTransfarantPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gunaTransfarantPictureBox1.Name = "gunaTransfarantPictureBox1";
-            this.gunaTransfarantPictureBox1.Size = new System.Drawing.Size(1097, 379);
-            this.gunaTransfarantPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaTransfarantPictureBox1.TabIndex = 4;
-            this.gunaTransfarantPictureBox1.TabStop = false;
-            // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
@@ -299,25 +297,25 @@
             this.gunaLabel2.TabIndex = 12;
             this.gunaLabel2.Text = "EPF No";
             // 
-            // testing_epf_search
+            // testing_epf_no
             // 
-            this.testing_epf_search.BackColor = System.Drawing.Color.Transparent;
-            this.testing_epf_search.BaseColor = System.Drawing.Color.White;
-            this.testing_epf_search.BorderColor = System.Drawing.Color.Silver;
-            this.testing_epf_search.BorderSize = 1;
-            this.testing_epf_search.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.testing_epf_search.FocusedBaseColor = System.Drawing.Color.White;
-            this.testing_epf_search.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.testing_epf_search.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.testing_epf_search.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.testing_epf_search.Location = new System.Drawing.Point(176, 142);
-            this.testing_epf_search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.testing_epf_search.Name = "testing_epf_search";
-            this.testing_epf_search.PasswordChar = '\0';
-            this.testing_epf_search.Radius = 10;
-            this.testing_epf_search.SelectedText = "";
-            this.testing_epf_search.Size = new System.Drawing.Size(312, 50);
-            this.testing_epf_search.TabIndex = 11;
+            this.testing_epf_no.BackColor = System.Drawing.Color.Transparent;
+            this.testing_epf_no.BaseColor = System.Drawing.Color.White;
+            this.testing_epf_no.BorderColor = System.Drawing.Color.Silver;
+            this.testing_epf_no.BorderSize = 1;
+            this.testing_epf_no.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.testing_epf_no.FocusedBaseColor = System.Drawing.Color.White;
+            this.testing_epf_no.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.testing_epf_no.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.testing_epf_no.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.testing_epf_no.Location = new System.Drawing.Point(176, 142);
+            this.testing_epf_no.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.testing_epf_no.Name = "testing_epf_no";
+            this.testing_epf_no.PasswordChar = '\0';
+            this.testing_epf_no.Radius = 10;
+            this.testing_epf_no.SelectedText = "";
+            this.testing_epf_no.Size = new System.Drawing.Size(312, 50);
+            this.testing_epf_no.TabIndex = 11;
             // 
             // channelling_search
             // 
@@ -504,11 +502,14 @@
             this.channelling_calc.Size = new System.Drawing.Size(127, 50);
             this.channelling_calc.TabIndex = 25;
             this.channelling_calc.Text = "Add";
+            this.channelling_calc.Click += new System.EventHandler(this.channelling_calc_Click);
             // 
             // testing_grid
             // 
+            this.testing_grid.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.testing_grid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.testing_grid.AutoGenerateColumns = false;
             this.testing_grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.testing_grid.BackgroundColor = System.Drawing.Color.Silver;
             this.testing_grid.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -523,6 +524,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.testing_grid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.testing_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.testing_grid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.epfno,
+            this.name,
+            this.bill_desc,
+            this.date,
+            this.testing_val,
+            this.rem_amount});
+            this.testing_grid.DataSource = this.eOUDataSetBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -533,12 +542,12 @@
             this.testing_grid.DefaultCellStyle = dataGridViewCellStyle3;
             this.testing_grid.EnableHeadersVisualStyles = false;
             this.testing_grid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.testing_grid.Location = new System.Drawing.Point(732, 82);
+            this.testing_grid.Location = new System.Drawing.Point(148, 581);
             this.testing_grid.Name = "testing_grid";
             this.testing_grid.RowHeadersVisible = false;
             this.testing_grid.RowTemplate.Height = 24;
             this.testing_grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.testing_grid.Size = new System.Drawing.Size(426, 438);
+            this.testing_grid.Size = new System.Drawing.Size(1006, 282);
             this.testing_grid.TabIndex = 26;
             this.testing_grid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.testing_grid.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -552,7 +561,7 @@
             this.testing_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.testing_grid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.testing_grid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.testing_grid.ThemeStyle.HeaderStyle.Height = 4;
+            this.testing_grid.ThemeStyle.HeaderStyle.Height = 52;
             this.testing_grid.ThemeStyle.ReadOnly = false;
             this.testing_grid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.testing_grid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -561,6 +570,51 @@
             this.testing_grid.ThemeStyle.RowsStyle.Height = 24;
             this.testing_grid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.testing_grid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // eOUDataSet
+            // 
+            this.eOUDataSet.DataSetName = "EOUDataSet";
+            this.eOUDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // eOUDataSetBindingSource
+            // 
+            this.eOUDataSetBindingSource.DataSource = this.eOUDataSet;
+            this.eOUDataSetBindingSource.Position = 0;
+            // 
+            // eOUDataSetBindingSource1
+            // 
+            this.eOUDataSetBindingSource1.DataSource = this.eOUDataSet;
+            this.eOUDataSetBindingSource1.Position = 0;
+            // 
+            // epfno
+            // 
+            this.epfno.HeaderText = "EPF No";
+            this.epfno.Name = "epfno";
+            // 
+            // name
+            // 
+            this.name.HeaderText = "Name";
+            this.name.Name = "name";
+            // 
+            // bill_desc
+            // 
+            this.bill_desc.HeaderText = "Bill Description";
+            this.bill_desc.Name = "bill_desc";
+            // 
+            // date
+            // 
+            this.date.HeaderText = "Date";
+            this.date.Name = "date";
+            // 
+            // testing_val
+            // 
+            this.testing_val.HeaderText = "Testing Value";
+            this.testing_val.Name = "testing_val";
+            // 
+            // rem_amount
+            // 
+            this.rem_amount.HeaderText = "Remaining Amount";
+            this.rem_amount.Name = "rem_amount";
             // 
             // add_testing_details
             // 
@@ -580,9 +634,8 @@
             this.Controls.Add(this.gunaControlBox1);
             this.Controls.Add(this.channelling_search);
             this.Controls.Add(this.gunaLabel2);
-            this.Controls.Add(this.testing_epf_search);
+            this.Controls.Add(this.testing_epf_no);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.gunaTransfarantPictureBox1);
             this.Controls.Add(this.gunaGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -590,8 +643,10 @@
             this.Text = "add_testing_details";
             this.gunaGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imageSlideT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.testing_grid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eOUDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eOUDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eOUDataSetBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -607,10 +662,9 @@
         private Guna.UI.WinForms.GunaButton t_btn_testing;
         private Guna.UI.WinForms.GunaButton t_btn_home;
         private System.Windows.Forms.PictureBox imageSlideT;
-        private Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox1;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI.WinForms.GunaTextBox testing_epf_search;
+        private Guna.UI.WinForms.GunaTextBox testing_epf_no;
         private Guna.UI.WinForms.GunaButton channelling_search;
         private Guna.UI.WinForms.GunaControlBox gunaControlBox2;
         private Guna.UI.WinForms.GunaControlBox gunaControlBox1;
@@ -622,5 +676,14 @@
         private Guna.UI.WinForms.GunaTextBox testing_value;
         private Guna.UI.WinForms.GunaButton channelling_calc;
         private Guna.UI2.WinForms.Guna2DataGridView testing_grid;
+        private System.Windows.Forms.BindingSource eOUDataSetBindingSource;
+        private EOUDataSet eOUDataSet;
+        private System.Windows.Forms.BindingSource eOUDataSetBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn epfno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bill_desc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn testing_val;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rem_amount;
     }
 }

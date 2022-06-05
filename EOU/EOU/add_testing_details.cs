@@ -19,6 +19,8 @@ namespace EOU
             InitializeComponent();
         }
 
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-NTKI9H5\SQLEXPRESS;Initial Catalog=EOU;Integrated Security=True");
+
         private void add_testing_details_Load(object sender, EventArgs e)
         {
             GetTestingDetails();
@@ -26,7 +28,17 @@ namespace EOU
 
         private void GetTestingDetails()
         {
-            throw new NotImplementedException();
+            SqlCommand cmd = new SqlCommand("Select * from Testing", con);
+            DataTable dt = new DataTable();
+
+            con.Open();
+
+            SqlDataReader sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+            con.Close();
+
+            testing_grid.DataSource = dt;
+
         }
 
         private void moveImageBoxT(object sender)
@@ -69,6 +81,36 @@ namespace EOU
         private void gunaLabel1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void channelling_calc_Click(object sender, EventArgs e)
+        {
+            if (IsValid()) 
+            {
+                SqlCommand cmd = new SqlCommand("INSERT INTO Testing VALUES (@epfno, @bill_desc, @date, @testing_val)", con);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("@epfno", testing_epf_no.Text);
+                cmd.Parameters.AddWithValue("@bill_desc", bill_description.Text);
+                //cmd.Parameters.AddWithValue("@date", testing_date.DateTime.Now);
+                cmd.Parameters.AddWithValue("@date", DateTime.Parse(testing_date.Text));
+                cmd.Parameters.AddWithValue("@testing_val", testing_value.Text);
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                MessageBox.Show("New testing record is successfully added","Saved",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private bool IsValid()
+        {
+            if (testing_epf_no.Text == string.Empty)
+            {
+                MessageBox.Show("EPF Number is required","Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            return true;
         }
     }
 }

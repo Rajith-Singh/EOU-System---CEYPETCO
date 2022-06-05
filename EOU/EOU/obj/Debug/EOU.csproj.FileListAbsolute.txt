@@ -32,3 +32,4 @@ D:\SLIIT\Internship\EOU\EOU\EOU\bin\Debug\normnfd.nlp
 D:\SLIIT\Internship\EOU\EOU\EOU\bin\Debug\normnfkc.nlp
 D:\SLIIT\Internship\EOU\EOU\EOU\bin\Debug\normnfkd.nlp
 D:\SLIIT\Internship\EOU\EOU\EOU\obj\Debug\EOU.csprojResolveAssemblyReference.cache
+D:\SLIIT\Internship\EOU\EOU\EOU\bin\Debug\Guna.UI2.dll
