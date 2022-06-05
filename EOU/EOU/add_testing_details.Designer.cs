@@ -29,22 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(add_testing_details));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.gunaGradientPanel1 = new Guna.UI.WinForms.GunaGradientPanel();
-            this.t_btn_logout = new Guna.UI.WinForms.GunaButton();
-            this.t_btn_spectacles = new Guna.UI.WinForms.GunaButton();
-            this.t_btn_channelling = new Guna.UI.WinForms.GunaButton();
-            this.t_btn_member = new Guna.UI.WinForms.GunaButton();
-            this.t_btn_testing = new Guna.UI.WinForms.GunaButton();
-            this.t_btn_home = new Guna.UI.WinForms.GunaButton();
-            this.imageSlideT = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(add_testing_details));
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.testing_epf_no = new Guna.UI.WinForms.GunaTextBox();
-            this.channelling_search = new Guna.UI.WinForms.GunaButton();
             this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
@@ -53,225 +44,33 @@
             this.testing_date = new Guna.UI.WinForms.GunaDateTimePicker();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.testing_value = new Guna.UI.WinForms.GunaTextBox();
-            this.channelling_calc = new Guna.UI.WinForms.GunaButton();
             this.testing_grid = new Guna.UI2.WinForms.Guna2DataGridView();
             this.eOUDataSet = new EOU.EOUDataSet();
             this.eOUDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.eOUDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.channelling_calc = new Guna.UI.WinForms.GunaButton();
+            this.channelling_search = new Guna.UI.WinForms.GunaButton();
+            this.gunaGradientPanel1 = new Guna.UI.WinForms.GunaGradientPanel();
+            this.t_btn_logout = new Guna.UI.WinForms.GunaButton();
+            this.t_btn_spectacles = new Guna.UI.WinForms.GunaButton();
+            this.t_btn_channelling = new Guna.UI.WinForms.GunaButton();
+            this.t_btn_member = new Guna.UI.WinForms.GunaButton();
+            this.t_btn_testing = new Guna.UI.WinForms.GunaButton();
+            this.t_btn_home = new Guna.UI.WinForms.GunaButton();
+            this.imageSlideT = new System.Windows.Forms.PictureBox();
             this.epfno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bill_desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.testing_val = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gunaGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imageSlideT)).BeginInit();
+            this.testing_charges = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.testing_grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eOUDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eOUDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eOUDataSetBindingSource1)).BeginInit();
+            this.gunaGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlideT)).BeginInit();
             this.SuspendLayout();
-            // 
-            // gunaGradientPanel1
-            // 
-            this.gunaGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel1.BackgroundImage")));
-            this.gunaGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaGradientPanel1.Controls.Add(this.t_btn_logout);
-            this.gunaGradientPanel1.Controls.Add(this.t_btn_spectacles);
-            this.gunaGradientPanel1.Controls.Add(this.t_btn_channelling);
-            this.gunaGradientPanel1.Controls.Add(this.t_btn_member);
-            this.gunaGradientPanel1.Controls.Add(this.t_btn_testing);
-            this.gunaGradientPanel1.Controls.Add(this.t_btn_home);
-            this.gunaGradientPanel1.Controls.Add(this.imageSlideT);
-            this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(20)))), ((int)(((byte)(1)))));
-            this.gunaGradientPanel1.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(20)))), ((int)(((byte)(1)))));
-            this.gunaGradientPanel1.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(20)))), ((int)(((byte)(1)))));
-            this.gunaGradientPanel1.GradientColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(20)))), ((int)(((byte)(1)))));
-            this.gunaGradientPanel1.Location = new System.Drawing.Point(9, 0);
-            this.gunaGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gunaGradientPanel1.Name = "gunaGradientPanel1";
-            this.gunaGradientPanel1.Size = new System.Drawing.Size(96, 905);
-            this.gunaGradientPanel1.TabIndex = 3;
-            this.gunaGradientPanel1.Text = "gunaGradientPanel1";
-            // 
-            // t_btn_logout
-            // 
-            this.t_btn_logout.Animated = true;
-            this.t_btn_logout.AnimationHoverSpeed = 0.07F;
-            this.t_btn_logout.AnimationSpeed = 0.03F;
-            this.t_btn_logout.BackColor = System.Drawing.Color.Transparent;
-            this.t_btn_logout.BaseColor = System.Drawing.Color.White;
-            this.t_btn_logout.BorderColor = System.Drawing.Color.Black;
-            this.t_btn_logout.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.t_btn_logout.FocusedColor = System.Drawing.Color.Empty;
-            this.t_btn_logout.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.t_btn_logout.ForeColor = System.Drawing.Color.White;
-            this.t_btn_logout.Image = ((System.Drawing.Image)(resources.GetObject("t_btn_logout.Image")));
-            this.t_btn_logout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.t_btn_logout.ImageSize = new System.Drawing.Size(20, 20);
-            this.t_btn_logout.Location = new System.Drawing.Point(12, 737);
-            this.t_btn_logout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.t_btn_logout.Name = "t_btn_logout";
-            this.t_btn_logout.OnHoverBaseColor = System.Drawing.Color.Yellow;
-            this.t_btn_logout.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.t_btn_logout.OnHoverForeColor = System.Drawing.Color.White;
-            this.t_btn_logout.OnHoverImage = null;
-            this.t_btn_logout.OnPressedColor = System.Drawing.Color.Black;
-            this.t_btn_logout.Radius = 10;
-            this.t_btn_logout.Size = new System.Drawing.Size(65, 54);
-            this.t_btn_logout.TabIndex = 8;
-            this.t_btn_logout.UseTransfarantBackground = true;
-            // 
-            // t_btn_spectacles
-            // 
-            this.t_btn_spectacles.Animated = true;
-            this.t_btn_spectacles.AnimationHoverSpeed = 0.07F;
-            this.t_btn_spectacles.AnimationSpeed = 0.03F;
-            this.t_btn_spectacles.BackColor = System.Drawing.Color.Transparent;
-            this.t_btn_spectacles.BaseColor = System.Drawing.Color.White;
-            this.t_btn_spectacles.BorderColor = System.Drawing.Color.Black;
-            this.t_btn_spectacles.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.t_btn_spectacles.FocusedColor = System.Drawing.Color.Empty;
-            this.t_btn_spectacles.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.t_btn_spectacles.ForeColor = System.Drawing.Color.White;
-            this.t_btn_spectacles.Image = ((System.Drawing.Image)(resources.GetObject("t_btn_spectacles.Image")));
-            this.t_btn_spectacles.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.t_btn_spectacles.ImageSize = new System.Drawing.Size(20, 20);
-            this.t_btn_spectacles.Location = new System.Drawing.Point(12, 581);
-            this.t_btn_spectacles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.t_btn_spectacles.Name = "t_btn_spectacles";
-            this.t_btn_spectacles.OnHoverBaseColor = System.Drawing.Color.Yellow;
-            this.t_btn_spectacles.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.t_btn_spectacles.OnHoverForeColor = System.Drawing.Color.White;
-            this.t_btn_spectacles.OnHoverImage = null;
-            this.t_btn_spectacles.OnPressedColor = System.Drawing.Color.Black;
-            this.t_btn_spectacles.Radius = 20;
-            this.t_btn_spectacles.Size = new System.Drawing.Size(65, 54);
-            this.t_btn_spectacles.TabIndex = 7;
-            this.t_btn_spectacles.UseTransfarantBackground = true;
-            // 
-            // t_btn_channelling
-            // 
-            this.t_btn_channelling.Animated = true;
-            this.t_btn_channelling.AnimationHoverSpeed = 0.07F;
-            this.t_btn_channelling.AnimationSpeed = 0.03F;
-            this.t_btn_channelling.BackColor = System.Drawing.Color.Transparent;
-            this.t_btn_channelling.BaseColor = System.Drawing.Color.White;
-            this.t_btn_channelling.BorderColor = System.Drawing.Color.Black;
-            this.t_btn_channelling.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.t_btn_channelling.FocusedColor = System.Drawing.Color.Empty;
-            this.t_btn_channelling.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.t_btn_channelling.ForeColor = System.Drawing.Color.White;
-            this.t_btn_channelling.Image = ((System.Drawing.Image)(resources.GetObject("t_btn_channelling.Image")));
-            this.t_btn_channelling.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.t_btn_channelling.ImageSize = new System.Drawing.Size(20, 20);
-            this.t_btn_channelling.Location = new System.Drawing.Point(12, 446);
-            this.t_btn_channelling.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.t_btn_channelling.Name = "t_btn_channelling";
-            this.t_btn_channelling.OnHoverBaseColor = System.Drawing.Color.Yellow;
-            this.t_btn_channelling.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.t_btn_channelling.OnHoverForeColor = System.Drawing.Color.White;
-            this.t_btn_channelling.OnHoverImage = null;
-            this.t_btn_channelling.OnPressedColor = System.Drawing.Color.Black;
-            this.t_btn_channelling.Radius = 20;
-            this.t_btn_channelling.Size = new System.Drawing.Size(65, 54);
-            this.t_btn_channelling.TabIndex = 6;
-            this.t_btn_channelling.UseTransfarantBackground = true;
-            // 
-            // t_btn_member
-            // 
-            this.t_btn_member.Animated = true;
-            this.t_btn_member.AnimationHoverSpeed = 0.07F;
-            this.t_btn_member.AnimationSpeed = 0.03F;
-            this.t_btn_member.BackColor = System.Drawing.Color.Transparent;
-            this.t_btn_member.BaseColor = System.Drawing.Color.White;
-            this.t_btn_member.BorderColor = System.Drawing.Color.Black;
-            this.t_btn_member.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.t_btn_member.FocusedColor = System.Drawing.Color.Empty;
-            this.t_btn_member.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.t_btn_member.ForeColor = System.Drawing.Color.White;
-            this.t_btn_member.Image = ((System.Drawing.Image)(resources.GetObject("t_btn_member.Image")));
-            this.t_btn_member.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.t_btn_member.ImageSize = new System.Drawing.Size(20, 20);
-            this.t_btn_member.Location = new System.Drawing.Point(15, 190);
-            this.t_btn_member.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.t_btn_member.Name = "t_btn_member";
-            this.t_btn_member.OnHoverBaseColor = System.Drawing.Color.Yellow;
-            this.t_btn_member.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.t_btn_member.OnHoverForeColor = System.Drawing.Color.White;
-            this.t_btn_member.OnHoverImage = null;
-            this.t_btn_member.OnPressedColor = System.Drawing.Color.Black;
-            this.t_btn_member.Radius = 20;
-            this.t_btn_member.Size = new System.Drawing.Size(65, 54);
-            this.t_btn_member.TabIndex = 5;
-            this.t_btn_member.UseTransfarantBackground = true;
-            // 
-            // t_btn_testing
-            // 
-            this.t_btn_testing.Animated = true;
-            this.t_btn_testing.AnimationHoverSpeed = 0.07F;
-            this.t_btn_testing.AnimationSpeed = 0.03F;
-            this.t_btn_testing.BackColor = System.Drawing.Color.Transparent;
-            this.t_btn_testing.BaseColor = System.Drawing.Color.White;
-            this.t_btn_testing.BorderColor = System.Drawing.Color.Black;
-            this.t_btn_testing.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.t_btn_testing.FocusedColor = System.Drawing.Color.Empty;
-            this.t_btn_testing.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.t_btn_testing.ForeColor = System.Drawing.Color.White;
-            this.t_btn_testing.Image = ((System.Drawing.Image)(resources.GetObject("t_btn_testing.Image")));
-            this.t_btn_testing.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.t_btn_testing.ImageSize = new System.Drawing.Size(20, 20);
-            this.t_btn_testing.Location = new System.Drawing.Point(12, 316);
-            this.t_btn_testing.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.t_btn_testing.Name = "t_btn_testing";
-            this.t_btn_testing.OnHoverBaseColor = System.Drawing.Color.Yellow;
-            this.t_btn_testing.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.t_btn_testing.OnHoverForeColor = System.Drawing.Color.White;
-            this.t_btn_testing.OnHoverImage = null;
-            this.t_btn_testing.OnPressedColor = System.Drawing.Color.Black;
-            this.t_btn_testing.Radius = 20;
-            this.t_btn_testing.Size = new System.Drawing.Size(65, 54);
-            this.t_btn_testing.TabIndex = 4;
-            this.t_btn_testing.UseTransfarantBackground = true;
-            // 
-            // t_btn_home
-            // 
-            this.t_btn_home.Animated = true;
-            this.t_btn_home.AnimationHoverSpeed = 0.07F;
-            this.t_btn_home.AnimationSpeed = 0.03F;
-            this.t_btn_home.BackColor = System.Drawing.Color.Transparent;
-            this.t_btn_home.BaseColor = System.Drawing.Color.White;
-            this.t_btn_home.BorderColor = System.Drawing.Color.Transparent;
-            this.t_btn_home.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.t_btn_home.FocusedColor = System.Drawing.Color.Empty;
-            this.t_btn_home.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.t_btn_home.ForeColor = System.Drawing.Color.Transparent;
-            this.t_btn_home.Image = ((System.Drawing.Image)(resources.GetObject("t_btn_home.Image")));
-            this.t_btn_home.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.t_btn_home.ImageSize = new System.Drawing.Size(20, 20);
-            this.t_btn_home.Location = new System.Drawing.Point(12, 44);
-            this.t_btn_home.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.t_btn_home.Name = "t_btn_home";
-            this.t_btn_home.OnHoverBaseColor = System.Drawing.Color.Yellow;
-            this.t_btn_home.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.t_btn_home.OnHoverForeColor = System.Drawing.Color.White;
-            this.t_btn_home.OnHoverImage = null;
-            this.t_btn_home.OnPressedColor = System.Drawing.Color.Black;
-            this.t_btn_home.Radius = 20;
-            this.t_btn_home.Size = new System.Drawing.Size(65, 54);
-            this.t_btn_home.TabIndex = 0;
-            this.t_btn_home.UseTransfarantBackground = true;
-            // 
-            // imageSlideT
-            // 
-            this.imageSlideT.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imageSlideT.BackgroundImage")));
-            this.imageSlideT.Image = ((System.Drawing.Image)(resources.GetObject("imageSlideT.Image")));
-            this.imageSlideT.Location = new System.Drawing.Point(56, 288);
-            this.imageSlideT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.imageSlideT.Name = "imageSlideT";
-            this.imageSlideT.Size = new System.Drawing.Size(41, 114);
-            this.imageSlideT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imageSlideT.TabIndex = 3;
-            this.imageSlideT.TabStop = false;
             // 
             // gunaLabel1
             // 
@@ -315,32 +114,6 @@
             this.testing_epf_no.SelectedText = "";
             this.testing_epf_no.Size = new System.Drawing.Size(312, 50);
             this.testing_epf_no.TabIndex = 11;
-            // 
-            // channelling_search
-            // 
-            this.channelling_search.AnimationHoverSpeed = 0.07F;
-            this.channelling_search.AnimationSpeed = 0.03F;
-            this.channelling_search.BackColor = System.Drawing.Color.Transparent;
-            this.channelling_search.BaseColor = System.Drawing.Color.Gray;
-            this.channelling_search.BorderColor = System.Drawing.Color.Black;
-            this.channelling_search.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.channelling_search.FocusedColor = System.Drawing.Color.Empty;
-            this.channelling_search.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.channelling_search.ForeColor = System.Drawing.Color.White;
-            this.channelling_search.Image = ((System.Drawing.Image)(resources.GetObject("channelling_search.Image")));
-            this.channelling_search.ImageSize = new System.Drawing.Size(20, 20);
-            this.channelling_search.Location = new System.Drawing.Point(529, 142);
-            this.channelling_search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.channelling_search.Name = "channelling_search";
-            this.channelling_search.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.channelling_search.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.channelling_search.OnHoverForeColor = System.Drawing.Color.White;
-            this.channelling_search.OnHoverImage = null;
-            this.channelling_search.OnPressedColor = System.Drawing.Color.Black;
-            this.channelling_search.Radius = 20;
-            this.channelling_search.Size = new System.Drawing.Size(127, 50);
-            this.channelling_search.TabIndex = 13;
-            this.channelling_search.Text = "Search";
             // 
             // gunaControlBox2
             // 
@@ -476,33 +249,6 @@
             this.testing_value.Size = new System.Drawing.Size(312, 50);
             this.testing_value.TabIndex = 24;
             // 
-            // channelling_calc
-            // 
-            this.channelling_calc.AnimationHoverSpeed = 0.07F;
-            this.channelling_calc.AnimationSpeed = 0.03F;
-            this.channelling_calc.BackColor = System.Drawing.Color.Transparent;
-            this.channelling_calc.BaseColor = System.Drawing.Color.Gray;
-            this.channelling_calc.BorderColor = System.Drawing.Color.Black;
-            this.channelling_calc.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.channelling_calc.FocusedColor = System.Drawing.Color.Empty;
-            this.channelling_calc.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.channelling_calc.ForeColor = System.Drawing.Color.White;
-            this.channelling_calc.Image = ((System.Drawing.Image)(resources.GetObject("channelling_calc.Image")));
-            this.channelling_calc.ImageSize = new System.Drawing.Size(20, 20);
-            this.channelling_calc.Location = new System.Drawing.Point(529, 501);
-            this.channelling_calc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.channelling_calc.Name = "channelling_calc";
-            this.channelling_calc.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.channelling_calc.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.channelling_calc.OnHoverForeColor = System.Drawing.Color.White;
-            this.channelling_calc.OnHoverImage = null;
-            this.channelling_calc.OnPressedColor = System.Drawing.Color.Black;
-            this.channelling_calc.Radius = 20;
-            this.channelling_calc.Size = new System.Drawing.Size(127, 50);
-            this.channelling_calc.TabIndex = 25;
-            this.channelling_calc.Text = "Add";
-            this.channelling_calc.Click += new System.EventHandler(this.channelling_calc_Click);
-            // 
             // testing_grid
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -521,13 +267,13 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.testing_grid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.testing_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.testing_grid.ColumnHeadersHeight = 27;
             this.testing_grid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.epfno,
             this.name,
             this.bill_desc,
             this.date,
-            this.testing_val});
+            this.testing_charges});
             this.testing_grid.DataSource = this.eOUDataSetBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -557,7 +303,7 @@
             this.testing_grid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.testing_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.testing_grid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.testing_grid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.testing_grid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.testing_grid.ThemeStyle.HeaderStyle.Height = 27;
             this.testing_grid.ThemeStyle.ReadOnly = false;
             this.testing_grid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -583,6 +329,267 @@
             this.eOUDataSetBindingSource1.DataSource = this.eOUDataSet;
             this.eOUDataSetBindingSource1.Position = 0;
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // channelling_calc
+            // 
+            this.channelling_calc.AnimationHoverSpeed = 0.07F;
+            this.channelling_calc.AnimationSpeed = 0.03F;
+            this.channelling_calc.BackColor = System.Drawing.Color.Transparent;
+            this.channelling_calc.BaseColor = System.Drawing.Color.Gray;
+            this.channelling_calc.BorderColor = System.Drawing.Color.Black;
+            this.channelling_calc.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.channelling_calc.FocusedColor = System.Drawing.Color.Empty;
+            this.channelling_calc.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.channelling_calc.ForeColor = System.Drawing.Color.White;
+            this.channelling_calc.Image = ((System.Drawing.Image)(resources.GetObject("channelling_calc.Image")));
+            this.channelling_calc.ImageSize = new System.Drawing.Size(20, 20);
+            this.channelling_calc.Location = new System.Drawing.Point(529, 501);
+            this.channelling_calc.Margin = new System.Windows.Forms.Padding(4);
+            this.channelling_calc.Name = "channelling_calc";
+            this.channelling_calc.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.channelling_calc.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.channelling_calc.OnHoverForeColor = System.Drawing.Color.White;
+            this.channelling_calc.OnHoverImage = null;
+            this.channelling_calc.OnPressedColor = System.Drawing.Color.Black;
+            this.channelling_calc.Radius = 20;
+            this.channelling_calc.Size = new System.Drawing.Size(127, 50);
+            this.channelling_calc.TabIndex = 25;
+            this.channelling_calc.Text = "Add";
+            this.channelling_calc.Click += new System.EventHandler(this.channelling_calc_Click);
+            // 
+            // channelling_search
+            // 
+            this.channelling_search.AnimationHoverSpeed = 0.07F;
+            this.channelling_search.AnimationSpeed = 0.03F;
+            this.channelling_search.BackColor = System.Drawing.Color.Transparent;
+            this.channelling_search.BaseColor = System.Drawing.Color.Gray;
+            this.channelling_search.BorderColor = System.Drawing.Color.Black;
+            this.channelling_search.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.channelling_search.FocusedColor = System.Drawing.Color.Empty;
+            this.channelling_search.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.channelling_search.ForeColor = System.Drawing.Color.White;
+            this.channelling_search.Image = ((System.Drawing.Image)(resources.GetObject("channelling_search.Image")));
+            this.channelling_search.ImageSize = new System.Drawing.Size(20, 20);
+            this.channelling_search.Location = new System.Drawing.Point(529, 142);
+            this.channelling_search.Margin = new System.Windows.Forms.Padding(4);
+            this.channelling_search.Name = "channelling_search";
+            this.channelling_search.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.channelling_search.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.channelling_search.OnHoverForeColor = System.Drawing.Color.White;
+            this.channelling_search.OnHoverImage = null;
+            this.channelling_search.OnPressedColor = System.Drawing.Color.Black;
+            this.channelling_search.Radius = 20;
+            this.channelling_search.Size = new System.Drawing.Size(127, 50);
+            this.channelling_search.TabIndex = 13;
+            this.channelling_search.Text = "Search";
+            // 
+            // gunaGradientPanel1
+            // 
+            this.gunaGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel1.BackgroundImage")));
+            this.gunaGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientPanel1.Controls.Add(this.t_btn_logout);
+            this.gunaGradientPanel1.Controls.Add(this.t_btn_spectacles);
+            this.gunaGradientPanel1.Controls.Add(this.t_btn_channelling);
+            this.gunaGradientPanel1.Controls.Add(this.t_btn_member);
+            this.gunaGradientPanel1.Controls.Add(this.t_btn_testing);
+            this.gunaGradientPanel1.Controls.Add(this.t_btn_home);
+            this.gunaGradientPanel1.Controls.Add(this.imageSlideT);
+            this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(20)))), ((int)(((byte)(1)))));
+            this.gunaGradientPanel1.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(20)))), ((int)(((byte)(1)))));
+            this.gunaGradientPanel1.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(20)))), ((int)(((byte)(1)))));
+            this.gunaGradientPanel1.GradientColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(20)))), ((int)(((byte)(1)))));
+            this.gunaGradientPanel1.Location = new System.Drawing.Point(9, 0);
+            this.gunaGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaGradientPanel1.Name = "gunaGradientPanel1";
+            this.gunaGradientPanel1.Size = new System.Drawing.Size(96, 905);
+            this.gunaGradientPanel1.TabIndex = 3;
+            this.gunaGradientPanel1.Text = "gunaGradientPanel1";
+            // 
+            // t_btn_logout
+            // 
+            this.t_btn_logout.Animated = true;
+            this.t_btn_logout.AnimationHoverSpeed = 0.07F;
+            this.t_btn_logout.AnimationSpeed = 0.03F;
+            this.t_btn_logout.BackColor = System.Drawing.Color.Transparent;
+            this.t_btn_logout.BaseColor = System.Drawing.Color.White;
+            this.t_btn_logout.BorderColor = System.Drawing.Color.Black;
+            this.t_btn_logout.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.t_btn_logout.FocusedColor = System.Drawing.Color.Empty;
+            this.t_btn_logout.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.t_btn_logout.ForeColor = System.Drawing.Color.White;
+            this.t_btn_logout.Image = ((System.Drawing.Image)(resources.GetObject("t_btn_logout.Image")));
+            this.t_btn_logout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t_btn_logout.ImageSize = new System.Drawing.Size(20, 20);
+            this.t_btn_logout.Location = new System.Drawing.Point(12, 737);
+            this.t_btn_logout.Margin = new System.Windows.Forms.Padding(4);
+            this.t_btn_logout.Name = "t_btn_logout";
+            this.t_btn_logout.OnHoverBaseColor = System.Drawing.Color.Yellow;
+            this.t_btn_logout.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.t_btn_logout.OnHoverForeColor = System.Drawing.Color.White;
+            this.t_btn_logout.OnHoverImage = null;
+            this.t_btn_logout.OnPressedColor = System.Drawing.Color.Black;
+            this.t_btn_logout.Radius = 10;
+            this.t_btn_logout.Size = new System.Drawing.Size(65, 54);
+            this.t_btn_logout.TabIndex = 8;
+            this.t_btn_logout.UseTransfarantBackground = true;
+            // 
+            // t_btn_spectacles
+            // 
+            this.t_btn_spectacles.Animated = true;
+            this.t_btn_spectacles.AnimationHoverSpeed = 0.07F;
+            this.t_btn_spectacles.AnimationSpeed = 0.03F;
+            this.t_btn_spectacles.BackColor = System.Drawing.Color.Transparent;
+            this.t_btn_spectacles.BaseColor = System.Drawing.Color.White;
+            this.t_btn_spectacles.BorderColor = System.Drawing.Color.Black;
+            this.t_btn_spectacles.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.t_btn_spectacles.FocusedColor = System.Drawing.Color.Empty;
+            this.t_btn_spectacles.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.t_btn_spectacles.ForeColor = System.Drawing.Color.White;
+            this.t_btn_spectacles.Image = ((System.Drawing.Image)(resources.GetObject("t_btn_spectacles.Image")));
+            this.t_btn_spectacles.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t_btn_spectacles.ImageSize = new System.Drawing.Size(20, 20);
+            this.t_btn_spectacles.Location = new System.Drawing.Point(12, 581);
+            this.t_btn_spectacles.Margin = new System.Windows.Forms.Padding(4);
+            this.t_btn_spectacles.Name = "t_btn_spectacles";
+            this.t_btn_spectacles.OnHoverBaseColor = System.Drawing.Color.Yellow;
+            this.t_btn_spectacles.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.t_btn_spectacles.OnHoverForeColor = System.Drawing.Color.White;
+            this.t_btn_spectacles.OnHoverImage = null;
+            this.t_btn_spectacles.OnPressedColor = System.Drawing.Color.Black;
+            this.t_btn_spectacles.Radius = 20;
+            this.t_btn_spectacles.Size = new System.Drawing.Size(65, 54);
+            this.t_btn_spectacles.TabIndex = 7;
+            this.t_btn_spectacles.UseTransfarantBackground = true;
+            // 
+            // t_btn_channelling
+            // 
+            this.t_btn_channelling.Animated = true;
+            this.t_btn_channelling.AnimationHoverSpeed = 0.07F;
+            this.t_btn_channelling.AnimationSpeed = 0.03F;
+            this.t_btn_channelling.BackColor = System.Drawing.Color.Transparent;
+            this.t_btn_channelling.BaseColor = System.Drawing.Color.White;
+            this.t_btn_channelling.BorderColor = System.Drawing.Color.Black;
+            this.t_btn_channelling.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.t_btn_channelling.FocusedColor = System.Drawing.Color.Empty;
+            this.t_btn_channelling.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.t_btn_channelling.ForeColor = System.Drawing.Color.White;
+            this.t_btn_channelling.Image = ((System.Drawing.Image)(resources.GetObject("t_btn_channelling.Image")));
+            this.t_btn_channelling.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t_btn_channelling.ImageSize = new System.Drawing.Size(20, 20);
+            this.t_btn_channelling.Location = new System.Drawing.Point(12, 446);
+            this.t_btn_channelling.Margin = new System.Windows.Forms.Padding(4);
+            this.t_btn_channelling.Name = "t_btn_channelling";
+            this.t_btn_channelling.OnHoverBaseColor = System.Drawing.Color.Yellow;
+            this.t_btn_channelling.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.t_btn_channelling.OnHoverForeColor = System.Drawing.Color.White;
+            this.t_btn_channelling.OnHoverImage = null;
+            this.t_btn_channelling.OnPressedColor = System.Drawing.Color.Black;
+            this.t_btn_channelling.Radius = 20;
+            this.t_btn_channelling.Size = new System.Drawing.Size(65, 54);
+            this.t_btn_channelling.TabIndex = 6;
+            this.t_btn_channelling.UseTransfarantBackground = true;
+            // 
+            // t_btn_member
+            // 
+            this.t_btn_member.Animated = true;
+            this.t_btn_member.AnimationHoverSpeed = 0.07F;
+            this.t_btn_member.AnimationSpeed = 0.03F;
+            this.t_btn_member.BackColor = System.Drawing.Color.Transparent;
+            this.t_btn_member.BaseColor = System.Drawing.Color.White;
+            this.t_btn_member.BorderColor = System.Drawing.Color.Black;
+            this.t_btn_member.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.t_btn_member.FocusedColor = System.Drawing.Color.Empty;
+            this.t_btn_member.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.t_btn_member.ForeColor = System.Drawing.Color.White;
+            this.t_btn_member.Image = ((System.Drawing.Image)(resources.GetObject("t_btn_member.Image")));
+            this.t_btn_member.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t_btn_member.ImageSize = new System.Drawing.Size(20, 20);
+            this.t_btn_member.Location = new System.Drawing.Point(15, 190);
+            this.t_btn_member.Margin = new System.Windows.Forms.Padding(4);
+            this.t_btn_member.Name = "t_btn_member";
+            this.t_btn_member.OnHoverBaseColor = System.Drawing.Color.Yellow;
+            this.t_btn_member.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.t_btn_member.OnHoverForeColor = System.Drawing.Color.White;
+            this.t_btn_member.OnHoverImage = null;
+            this.t_btn_member.OnPressedColor = System.Drawing.Color.Black;
+            this.t_btn_member.Radius = 20;
+            this.t_btn_member.Size = new System.Drawing.Size(65, 54);
+            this.t_btn_member.TabIndex = 5;
+            this.t_btn_member.UseTransfarantBackground = true;
+            // 
+            // t_btn_testing
+            // 
+            this.t_btn_testing.Animated = true;
+            this.t_btn_testing.AnimationHoverSpeed = 0.07F;
+            this.t_btn_testing.AnimationSpeed = 0.03F;
+            this.t_btn_testing.BackColor = System.Drawing.Color.Transparent;
+            this.t_btn_testing.BaseColor = System.Drawing.Color.White;
+            this.t_btn_testing.BorderColor = System.Drawing.Color.Black;
+            this.t_btn_testing.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.t_btn_testing.FocusedColor = System.Drawing.Color.Empty;
+            this.t_btn_testing.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.t_btn_testing.ForeColor = System.Drawing.Color.White;
+            this.t_btn_testing.Image = ((System.Drawing.Image)(resources.GetObject("t_btn_testing.Image")));
+            this.t_btn_testing.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t_btn_testing.ImageSize = new System.Drawing.Size(20, 20);
+            this.t_btn_testing.Location = new System.Drawing.Point(12, 316);
+            this.t_btn_testing.Margin = new System.Windows.Forms.Padding(4);
+            this.t_btn_testing.Name = "t_btn_testing";
+            this.t_btn_testing.OnHoverBaseColor = System.Drawing.Color.Yellow;
+            this.t_btn_testing.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.t_btn_testing.OnHoverForeColor = System.Drawing.Color.White;
+            this.t_btn_testing.OnHoverImage = null;
+            this.t_btn_testing.OnPressedColor = System.Drawing.Color.Black;
+            this.t_btn_testing.Radius = 20;
+            this.t_btn_testing.Size = new System.Drawing.Size(65, 54);
+            this.t_btn_testing.TabIndex = 4;
+            this.t_btn_testing.UseTransfarantBackground = true;
+            // 
+            // t_btn_home
+            // 
+            this.t_btn_home.Animated = true;
+            this.t_btn_home.AnimationHoverSpeed = 0.07F;
+            this.t_btn_home.AnimationSpeed = 0.03F;
+            this.t_btn_home.BackColor = System.Drawing.Color.Transparent;
+            this.t_btn_home.BaseColor = System.Drawing.Color.White;
+            this.t_btn_home.BorderColor = System.Drawing.Color.Transparent;
+            this.t_btn_home.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.t_btn_home.FocusedColor = System.Drawing.Color.Empty;
+            this.t_btn_home.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.t_btn_home.ForeColor = System.Drawing.Color.Transparent;
+            this.t_btn_home.Image = ((System.Drawing.Image)(resources.GetObject("t_btn_home.Image")));
+            this.t_btn_home.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t_btn_home.ImageSize = new System.Drawing.Size(20, 20);
+            this.t_btn_home.Location = new System.Drawing.Point(12, 44);
+            this.t_btn_home.Margin = new System.Windows.Forms.Padding(4);
+            this.t_btn_home.Name = "t_btn_home";
+            this.t_btn_home.OnHoverBaseColor = System.Drawing.Color.Yellow;
+            this.t_btn_home.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.t_btn_home.OnHoverForeColor = System.Drawing.Color.White;
+            this.t_btn_home.OnHoverImage = null;
+            this.t_btn_home.OnPressedColor = System.Drawing.Color.Black;
+            this.t_btn_home.Radius = 20;
+            this.t_btn_home.Size = new System.Drawing.Size(65, 54);
+            this.t_btn_home.TabIndex = 0;
+            this.t_btn_home.UseTransfarantBackground = true;
+            // 
+            // imageSlideT
+            // 
+            this.imageSlideT.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imageSlideT.BackgroundImage")));
+            this.imageSlideT.Image = ((System.Drawing.Image)(resources.GetObject("imageSlideT.Image")));
+            this.imageSlideT.Location = new System.Drawing.Point(56, 288);
+            this.imageSlideT.Margin = new System.Windows.Forms.Padding(4);
+            this.imageSlideT.Name = "imageSlideT";
+            this.imageSlideT.Size = new System.Drawing.Size(41, 114);
+            this.imageSlideT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imageSlideT.TabIndex = 3;
+            this.imageSlideT.TabStop = false;
+            // 
             // epfno
             // 
             this.epfno.DataPropertyName = "epfno";
@@ -607,11 +614,11 @@
             this.date.HeaderText = "Date";
             this.date.Name = "date";
             // 
-            // testing_val
+            // testing_charges
             // 
-            this.testing_val.DataPropertyName = "testing_val";
-            this.testing_val.HeaderText = "Testing Value";
-            this.testing_val.Name = "testing_val";
+            this.testing_charges.DataPropertyName = "testing_charges";
+            this.testing_charges.HeaderText = "Testing Charges";
+            this.testing_charges.Name = "testing_charges";
             // 
             // add_testing_details
             // 
@@ -638,12 +645,12 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "add_testing_details";
             this.Text = "add_testing_details";
-            this.gunaGradientPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imageSlideT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.testing_grid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eOUDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eOUDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eOUDataSetBindingSource1)).EndInit();
+            this.gunaGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlideT)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -676,10 +683,11 @@
         private System.Windows.Forms.BindingSource eOUDataSetBindingSource;
         private EOUDataSet eOUDataSet;
         private System.Windows.Forms.BindingSource eOUDataSetBindingSource1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private System.Windows.Forms.DataGridViewTextBoxColumn epfno;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn bill_desc;
         private System.Windows.Forms.DataGridViewTextBoxColumn date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn testing_val;
+        private System.Windows.Forms.DataGridViewTextBoxColumn testing_charges;
     }
 }

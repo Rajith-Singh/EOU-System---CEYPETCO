@@ -28,7 +28,7 @@ namespace EOU
 
         private void GetTestingDetails()
         {
-            SqlCommand cmd = new SqlCommand("Select T.epfno, T.bill_desc, T.date, T.testing_val, E.name from Testing T, emp E where T.epfno = E.epfno", con);
+            SqlCommand cmd = new SqlCommand("Select T.epfno, T.bill_desc, T.date, T.testing_charges, E.name from Testing T, emp E where T.epfno = E.epfno", con);
             DataTable dt = new DataTable();
 
             con.Open();
@@ -39,6 +39,18 @@ namespace EOU
 
             testing_grid.DataSource = dt;
 
+        }
+
+        public void updateBalance()
+        {
+            SqlCommand cmd = new SqlCommand("update emp set testing_allowance=testing_allowance - @testing_charges where epfno = @epfno ", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@epfno", testing_epf_no.Text);
+            cmd.Parameters.AddWithValue("@testing_charges", testing_value.Text);
+
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
 
         private void moveImageBoxT(object sender)
@@ -87,12 +99,12 @@ namespace EOU
         {
             if (IsValid()) 
             {
-                SqlCommand cmd = new SqlCommand("INSERT INTO Testing VALUES (@epfno, @bill_desc, @date, @testing_val)", con);
+                SqlCommand cmd = new SqlCommand("INSERT INTO Testing VALUES (@epfno, @bill_desc, @date, @testing_charges)", con);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@epfno", testing_epf_no.Text);
                 cmd.Parameters.AddWithValue("@bill_desc", bill_description.Text);
                 cmd.Parameters.AddWithValue("@date", DateTime.Parse(testing_date.Text));
-                cmd.Parameters.AddWithValue("@testing_val", testing_value.Text);
+                cmd.Parameters.AddWithValue("@testing_charges", testing_value.Text);
 
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -100,6 +112,7 @@ namespace EOU
 
                 MessageBox.Show("New testing record is successfully added","Saved",MessageBoxButtons.OK, MessageBoxIcon.Information);
                 GetTestingDetails();
+                updateBalance();
             }
         }
 
