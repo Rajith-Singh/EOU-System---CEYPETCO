@@ -16,7 +16,7 @@ namespace EOU
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new add_testing_details());
+            Application.Run(new add_members());
         }
     }
 }
